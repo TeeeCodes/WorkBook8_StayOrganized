@@ -1,0 +1,222 @@
+:root {
+    --lavendar: #E6E6FA;
+    --whiteSmoke: #F5F5FF;
+    --semiGray: #c2c2cc33;
+    --charcoal: #2C2C2C;
+    --robinEggBlue: #00C6C2;
+    --outerSpace: #435058;
+}
+
+body {
+    font-family: 'Lato', Helvetica !important;
+}
+
+nav a {
+    font-size: 18px !important;
+}
+
+.container-bg-img {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/frontend/images/hero-image.png");
+    background-size: 75% ;
+    background-position-x: 75%;
+    background-position-y: 55%;
+
+    min-height: 70vh; 
+}
+
+/* .checklist-img {
+    width: 100%;
+    height: 400px;
+    background-image: url('assets/images/checklist.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  } */
+  
+.header-column div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex: 1;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#main div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex: 1;
+    padding: 10px;
+}
+
+.create-user {
+    width: 24%;
+    padding: 50px;
+    background-image: linear-gradient(to left bottom, #00c6c2, #56cee4, #93d5f7, #c4dcfc, #e6e6fa);
+}
+
+.new-btn {
+    width: 100%;
+}
+
+@media only screen and (max-width:1400px){
+
+    .create-user {
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width:630px){
+    
+    .create-user {
+        width: 90%;
+    }
+}
+
+.lavendar{
+    background-color: var(--lavendar) !important;
+} 
+
+.text-lavendar {
+    color: var(--lavendar) !important;
+}
+
+.white-smoke {
+    background-color: var(--whiteSmoke) !important;
+}
+
+.text-white-smoke {
+    color: var(--whiteSmoke);
+}
+
+.semi-gray {
+    background-color: var(--semiGray) !important;
+}
+
+.text-semi-gray {
+    color: var(--semiGray);
+}
+
+.charcoal {
+    background-color: var(--charcoal);
+}
+
+.text-charcoal {
+    color: var(--charcoal);
+}
+
+
+.robinEggBlue {
+    background-color: var(--robinEggBlue);
+}
+
+.text-robinEggBlue {
+    color: var(--robinEggBlue) ;
+}
+
+.outerSpace {
+    background-color: var(--outerSpace);
+}
+
+.outerSpace {
+    color: var(--outerSpace);
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: var(--robinEggBlue) !important;
+}
+
+.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
+    background-color: var(--outerSpace) !important;
+}
+
+#parentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+/* #formContainer {
+    width: 25%;
+    padding: 12px 20px;
+    display: grid;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+} */
+#userDropdown {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+  background-color: #fff;
+}
+#categoryDropdown {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+  background-color: #fff;
+}
+#descContainer {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+  background-color: #fff;
+}
+#deadlineObj {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+  background-color: #fff;
+}
+#taskDropdown {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+  background-color: #fff;
+}
+#createSubmit {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#createSubmit:hover {
+  background-color: #45A049;
+}
+#createSubmit:disabled {
+  background-color: #CCCCCC;
+  cursor: not-allowed;
+}
+#userDropdown::after {
+  content: '\25BC/';
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+}
+#userDropdown option {
+  background-color: #fff;
+  color: #000;
+}
+#userDropdown option:checked {
+  background-color: #F0F0F0;
+  color: #333;
+}
